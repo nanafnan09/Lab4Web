@@ -227,7 +227,7 @@ Dan hasilnya akan seperti foto yang dibawah ini untuk bagian about
 
 ![foto](https://github.com/nanafnan09/Pratikum-Pict/blob/ca648cdd599bd1fd52f44bb55a6e2d517b566910/Lab4%20Jawaban%201.png)
 
-2. Berikut kode dibawah ini befungsi sebagai menambahkan kolom untuk mengisi Nama,Email,Message
+2. Berikut kode dibawah ini befungsi sebagai menambahkan kolom untuk mengisi Nama,Email,Message.Buat kan file baru yang bernamakan `kontak.html`
 
 ```html
 <!DOCTYPE html>
