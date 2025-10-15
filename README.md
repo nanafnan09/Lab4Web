@@ -119,7 +119,7 @@ Tambahkan CSS pada content artikel
 
 # Jawaban
 
-1. Berikut Kode untuk menambahkan layout menu about,yaitu dengan cara membuat file baru `About.html`
+1. Berikut Kode untuk menambahkan layout menu about,yaitu dengan cara membuat file baru `about.html`
 ```html
 <!DOCTYPE html>
 <html lang="en">
