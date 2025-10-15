@@ -102,3 +102,211 @@ Tambahkan CSS pada content artikel
 
 ![foto](https://github.com/nanafnan09/Pratikum-Pict/blob/836b71195dcf969146d123e6ed1f7fea9dbfe0ed/Lab4%2CTampilan%209.png)
 
+
+# Hasil dari Tugas Lab4Web
+
+![foto](https://github.com/nanafnan09/Pratikum-Pict/blob/dbe90ad6f833f80c778455d4fab92183f7057cb5/Hasil%20Lab4Web.png)
+
+# Pertanyaan dan Tugas
+
+1. Tambahkan Layout untuk menu About
+=> buat single layout yang berisi deskripsi, portfolio, dll
+
+2. Tambahkan layout untuk menu Contact
+=> yang berisi form isian: nama, email, message, dll
+
+# Jawaban
+
+1. Berikut Kode untuk menambahkan layout menu about,yaitu dengan cara membuat file baru `About.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html" class="active">About</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <section id="hero">
+        <h1>About Us</h1>
+        <p>
+          Learn more about our team, our mission, and the projects we've worked
+          on. We are dedicated to delivering high-quality solutions and
+          innovative designs.
+        </p>
+      </section>
+      <section id="wrapper">
+        <section id="main">
+          <article class="entry">
+            <h2>Description</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum lorem elit, iaculis in nisl volutpat, malesuada
+              tincidunt arcu. Proin in leo fringilla, vestibulum mi porta,
+              faucibus felis. Integer pharetra est nunc, nec pretium nunc
+              pretium ac. We specialize in web development, design, and more.
+            </p>
+          </article>
+          <hr class="divider" />
+          <h2>Portfolio</h2>
+          <div class="row">
+            <div class="box">
+              <img
+                src="https://dummyimage.com/120/db7d25/fff.png"
+                alt="Project 1"
+                class="image-circle"
+              />
+              <h3>Project 1</h3>
+              <p>A web application built with modern technologies.</p>
+              <a href="#" class="btn btn-default">View detail</a>
+            </div>
+            <div class="box">
+              <img
+                src="https://dummyimage.com/120/3e73e6/fff.png"
+                alt="Project 2"
+                class="image-circle"
+              />
+              <h3>Project 2</h3>
+              <p>An e-commerce platform with responsive design.</p>
+              <a href="#" class="btn btn-default">View detail</a>
+            </div>
+            <div class="box">
+              <img
+                src="https://dummyimage.com/120/71e6d4/fff.png"
+                alt="Project 3"
+                class="image-circle"
+              />
+              <h3>Project 3</h3>
+              <p>A mobile app for productivity enhancement.</p>
+              <a href="#" class="btn btn-default">View detail</a>
+            </div>
+          </div>
+        </section>
+        <aside id="sidebar">
+          <div class="widget-box">
+            <h3 class="title">Widget Header</h3>
+            <ul>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+            </ul>
+          </div>
+          <div class="widget-box">
+            <h3 class="title">Widget Text</h3>
+            <p>
+              Vestibulum lorem elit, iaculis in nisl volutpat, malesuada
+              tincidunt arcu. Proin in leo fringilla, vestibulum mi porta,
+              faucibus felis. Integer pharetra est nunc, nec pretium nunc
+              pretium ac.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
+```
+
+Dan hasilnya akan seperti foto yang dibawah ini untuk bagian about
+
+![foto](https://github.com/nanafnan09/Pratikum-Pict/blob/ca648cdd599bd1fd52f44bb55a6e2d517b566910/Lab4%20Jawaban%201.png)
+
+2. Berikut kode dibawah ini befungsi sebagai menambahkan kolom untuk mengisi Nama,Email,Message
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </nav>
+      <section id="hero">
+        <h1>Contact Us</h1>
+        <p>
+          Get in touch with us. We'd love to hear from you. Fill out the form
+          below and we'll respond as soon as possible.
+        </p>
+      </section>
+      <section id="wrapper">
+        <section id="main">
+          <article class="entry">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+              <label for="nama">Nama:</label><br />
+              <input type="text" id="nama" name="nama" required /><br /><br />
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br /><br />
+              <label for="message">Message:</label><br />
+              <textarea id="message" name="message" rows="5" required></textarea
+              ><br /><br />
+              <input type="submit" value="Submit" class="btn btn-default" />
+            </form>
+          </article>
+        </section>
+        <aside id="sidebar">
+          <div class="widget-box">
+            <h3 class="title">Widget Header</h3>
+            <ul>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+            </ul>
+          </div>
+          <div class="widget-box">
+            <h3 class="title">Widget Text</h3>
+            <p>
+              Vestibulum lorem elit, iaculis in nisl volutpat, malesuada
+              tincidunt arcu. Proin in leo fringilla, vestibulum mi porta,
+              faucibus felis. Integer pharetra est nunc, nec pretium nunc
+              pretium ac.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
+```
+
+Hasilnya akan seperti ini 
+
+![foto](https://github.com/nanafnan09/Pratikum-Pict/blob/ca648cdd599bd1fd52f44bb55a6e2d517b566910/Lab%204%20Jawaban%202.png)
